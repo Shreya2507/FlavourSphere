@@ -1,15 +1,16 @@
 import { useState } from 'react'
 import Navbar from './components/Navbar'
 import { BrowserRouter, Route, Routes } from 'react-router-dom'
-import Forum from './components/Forum';
+import ForumPage from './pages/ForumPage'
+import Home from './pages/home/Banner'
 
 function App() {
   return (
     <BrowserRouter>
       <Navbar />
-      <Forum />
       <Routes>
-        {/* <Route path='/' element={<Home />} /> */}
+        <Route path='/' element={<Home />} />
+        <Route path='forum' element={<ForumPage />} />
       </Routes>
     </BrowserRouter>
   );
