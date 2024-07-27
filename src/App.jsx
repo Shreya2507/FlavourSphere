@@ -1,18 +1,16 @@
+import Navbar from "./components/Navbar";
 
-import { useState } from 'react'
-import Navbar from './components/Navbar'
-import { BrowserRouter, Route, Routes } from 'react-router-dom'
-
+import Banner from "./components/Banner";
+import "./App.css";
+import { BrowserRouter, Routes } from "react-router-dom";
 function App() {
   return (
     <BrowserRouter>
       <Navbar />
-      <Routes>
-        {/* <Route path='/' element={<Home />} /> */}
-      </Routes>
+      <Banner />
+      <Routes>{/* <Route path='/' element={<Home />} /> */}</Routes>
     </BrowserRouter>
-  )
-
+  );
 }
 
 export default App;
