@@ -6,10 +6,9 @@ export default {
       backgroundImage: {
         "custom-gradient":
           "linear-gradient(to bottom, #FFCCD5 0%, #FED9E0 27%, #FED9E0 40%, #FED9E0 85%, #FCFCFC 100%)",
-
-        fontFamily: {
-          poppins: ["Poppins", "sans-serif"],
-        },
+      },
+      fontFamily: {
+        poppins: ["Poppins", "sans-serif"],
       },
     },
   },
