@@ -1,5 +1,5 @@
 import React from 'react'
-import Forum from '../components/Forum'
+// import Forum from '../components/Forum'
 import ForumIcon from '/forum/forum_icon.png'
 import Love from '/forum/Love.png'
 

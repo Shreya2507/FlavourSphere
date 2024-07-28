@@ -1,35 +1,104 @@
+import React, { useEffect, useState } from "react";
+import logo from "../../public/logo.png";
+import { AiOutlineUser } from "react-icons/ai";
 
-import Logo from "/logo.png";
+const Navbar = () => {
+  const [isSticky, setSticky] = useState(false);
 
-function Navbar() {
-  return (
-    <div className=" bg-black font-poppins flex justify-between items-center py-2 px-20  ">
-      <div className=" h-20">
-        <img className="h-full w-full" src={Logo} />
-      </div>
+  //handles scrolling
+  useEffect(() => {
+    const handleScroll = () => {
+      const offset = window.scrollY;
+      if (offset > 0) {
+        setSticky(true);
+      } else {
+        setSticky(false);
+      }
+    };
 
-      <div className="flex justify-between items-center w-2/5">
-        <div className="text-white text-xl hover:underline">
-          <a href="/">Home</a>
-        </div>
-        <div className="text-white text-xl hover:underline">
-          <a href="">Recipes</a>
-        </div>
-        <div className="text-white text-xl hover:underline">
-          <a href="/forum">Forum</a>
-        </div>
-        <div className="text-white text-xl hover:underline">
-          <a href="">Contact Us</a>
-        </div>
-      </div>
+    window.addEventListener("scroll", handleScroll);
+    return () => {
+      window.addEventListener("scroll", handleScroll);
+    };
+  }, []);
+  const navItems = (
+    <>
+      <li>
+        <a href="/" className="text-white text-xl hover:underline">
+          Home
+        </a>
+      </li>
 
-      <div>
-        <button className="bg-white text-black font-medium text-base rounded-full px-14 py-2 hover:bg-[#D86464] hover:text-white transition-all duration-300">
-          Login
-        </button>
-      </div>
-    </div>
+      <li>
+        <a href="/" className="text-white text-xl hover:underline">
+          Recipes
+        </a>
+      </li>
+
+      <li>
+        <a href="/" className="text-white text-xl hover:underline">
+          Forum
+        </a>
+      </li>
+
+      <li>
+        <a href="/" className="text-white text-xl hover:underline">
+          Contact Us
+        </a>
+      </li>
+    </>
   );
-}
+  return (
+    <header className=" max-w-screen-2xl container mx-auto fixed top-0 right-0 transition-all duration-300 ease-in-out">
+      <div
+        className={`navbar xl:px-24 xl:py-4 ${
+          isSticky ? "shadow-md transition-all duration-300 ease-in-out" : ""
+        }`}
+      >
+        <div className="navbar-start">
+          <div className="dropdown ">
+            <div tabIndex={0} role="button" className="btn btn-ghost lg:hidden">
+              <svg
+                xmlns="http://www.w3.org/2000/svg"
+                className="h-5 w-5"
+                fill="none"
+                viewBox="0 0 24 24"
+                stroke="currentColor"
+              >
+                <path
+                  strokeLinecap="round"
+                  strokeLinejoin="round"
+                  strokeWidth="2"
+                  d="M4 6h16M4 12h8m-8 6h16"
+                />
+              </svg>
+            </div>
+            <ul
+              tabIndex={0}
+              className="menu menu-sm dropdown-content bg-base-100 rounded-box z-[1] mt-3 w-52 p-2 shadow"
+            >
+              {navItems}
+            </ul>
+          </div>
+          <a href="/" className="h-20">
+            <img className="h-full w-full" src={logo} alt="" />
+          </a>
+        </div>
+        <div className="navbar-center hidden lg:flex">
+          <ul className="menu menu-horizontal px-1">
+            {/* nav Items */}
+            {navItems}
+          </ul>
+        </div>
+        <div className="navbar-end">
+          <a className="btn bg-button rounded-full border-none px-6 text-white flex items-center gap-2">
+            <AiOutlineUser />
+            Login
+          </a>
+        </div>
+      </div>
+    </header>
+  );
+};
 
 export default Navbar;
