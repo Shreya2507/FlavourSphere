@@ -3,3 +3,40 @@
 body {
     font-family: 'Inter', sans-serif;
 }
+
+header {
+    z-index: 10001 !important;
+}
+
+.logo-container {
+    display: flex;
+    flex-direction: column;
+    align-items: left;
+    align-items: flex-start;
+
+}
+
+.logo {
+    width: 70px;
+    height: auto;
+}
+
+.logo-text {
+    text-align: left;
+    color: #6A6868;
+    margin-top: auto;
+}
+
+footer {
+    z-index: 10000;
+    position: relative;
+}
+
+.footer-title {
+    z-index: 0;
+    color: black !important;
+}
+
+.link-hover {
+    color: #683636;
+}

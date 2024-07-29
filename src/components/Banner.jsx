@@ -1,11 +1,12 @@
 import React from "react";
+
 const Banner = () => {
   return (
-    <div className="section-container bg-custom-gradient min-h-screen">
-      <div className="py-20 px-20 flex justify-between items-center gap-6">
+    <div className=" max-w-screen-2xl container mx-auto xl:px-24 px-4 py-20 bg-custom-gradient min-h-screen">
+      <div className="py-20 flex justify-between items-center gap-6">
         {/* images */}
-        <div className="md:w-1/2 ">
-          <img src="/images/home/Banner.png"></img>
+        <div className="md:w-1/2 xl:w-1/2 flex justify-center">
+          <img src="/images/home/banner.png"></img>
         </div>
 
         {/* texts */}
