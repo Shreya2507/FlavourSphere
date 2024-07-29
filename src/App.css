@@ -2,11 +2,39 @@
 
 body {
     font-family: 'Inter', sans-serif;
+    background-color: white;
+
 }
 
 header {
     z-index: 10001 !important;
 }
+
+.subtitle {
+    color: #D95B5B;
+    text-transform: uppercase;
+    letter-spacing: 0.1em;
+    font-weight: 500;
+    font-size: 1.125rem;
+
+}
+
+.title {
+    font-size: 2.25rem;
+    font-weight: bold;
+    margin-top: 0.5rem;
+    margin-bottom: 0.5rem;
+    line-height: 1.25;
+    color: #897979;
+}
+
+@media (min-width: 768px) {
+    .title {
+        font-size: 3rem;
+        line-height: 1.25;
+    }
+}
+
 
 .logo-container {
     display: flex;
