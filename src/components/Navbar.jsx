@@ -37,7 +37,7 @@ const Navbar = () => {
       </li>
 
       <li>
-        <a href="/" className="text-white text-xl hover:underline">
+        <a href="/forum" className="text-white text-xl hover:underline">
           Forum
         </a>
       </li>
