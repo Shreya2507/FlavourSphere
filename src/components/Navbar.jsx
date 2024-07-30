@@ -1,6 +1,7 @@
 import React, { useEffect, useState } from "react";
 import logo from "../../public/logo.png";
 import { AiOutlineUser } from "react-icons/ai";
+import Modal from "./Modal";
 
 const Navbar = () => {
   const [isSticky, setSticky] = useState(false);
@@ -50,7 +51,7 @@ const Navbar = () => {
   );
   return (
     <header
-      className={`bg-[#fab80e] max-w-screen-2xl container mx-auto fixed top-0 left-0 right-0 transition-all duration-300 ease-in-out`}
+      className={`bg-[#f8b212] max-w-screen-2xl container mx-auto fixed top-0 left-0 right-0 transition-all duration-300 ease-in-out`}
     >
       <div
         className={`navbar xl:px-24 ${
@@ -93,10 +94,15 @@ const Navbar = () => {
           </ul>
         </div>
         <div className="navbar-end">
-          <a className="btn bg-button rounded-full border-none px-6 text-white flex items-center gap-2">
+          {/* login button */}
+          <button
+            onClick={() => document.getElementById("my_modal_5").showModal()}
+            className="btn bg-button hover:bg-[#ba4545] hover:border-none rounded-full border-none px-6 text-white flex items-center gap-2"
+          >
             <AiOutlineUser />
             Login
-          </a>
+          </button>
+          <Modal />
         </div>
       </div>
     </header>

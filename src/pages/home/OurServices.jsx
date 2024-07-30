@@ -40,7 +40,7 @@ const OurServices = () => {
               We believe in the power of food to bring people together, not just
               around the table, but also through shared recipes and generosity.
             </p>
-            <button className="btn bg-[#D95B5B] text-white px-8 py-3 rounded-full border-none">
+            <button className="btn hover:bg-[#ba4545] hover:border-none rounded-full border-none bg-[#D95B5B] text-white px-8 py-3 rounded-full border-none">
               Explore
             </button>
           </div>

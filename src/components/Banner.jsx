@@ -6,7 +6,7 @@ const Banner = () => {
       <div className="py-20 flex justify-between items-center gap-6">
         {/* images */}
         <div className="md:w-1/2 xl:w-1/2 flex justify-center">
-          <img src="/images/home/banner.png"></img>
+          <img src="/images/home/Banner.png"></img>
         </div>
 
         {/* texts */}
@@ -18,7 +18,7 @@ const Banner = () => {
           <p className="text-xl text-headingGrey">
             Where Every Recipe Tells a Story and Every Meal Makes a Difference
           </p>
-          <button className="btn bg-button px-8 py-3 font-semibold text-white rounded-full border-none shadow-lg ">
+          <button className="btn bg-button hover:bg-[#ba4545] hover:border-none rounded-full border-none px-8 py-3 font-semibold text-white rounded-full border-none shadow-lg ">
             Explore
           </button>
         </div>
