@@ -95,9 +95,9 @@ function Recipes() {
                     <div key={index} className="card h-50 w-full p-7 flex flex-col justify-start items-center bg-orange-400 rounded-3xl">
                         <div className='w-11/12 mb-2 overflow-hidden rounded-[12px]'><img className='w-full' src={recipe.image} /></div>
                         <div className='h-[0.5px] w-full bg-gray-500 opacity-40 mb-3'></div>
-                        <div className='bg-black rounded-lg text-lg text-white px-7 mb-2 text-center'>{recipe.name}</div>
-                        <div className='bg-white rounded-full text-sm text-black px-3 mb-5'>Cook time : {recipe.cook_time}</div>
-                        <div className='text-black text-center text-sm'>{recipe.sub_heading}</div>
+                        <div className='bg-black rounded-lg text-[1.2vw] text-white px-7 mb-2 text-center'>{recipe.name}</div>
+                        <div className='bg-white rounded-full text-[1.0vw] text-black px-3 mb-5'>Cook time : {recipe.cook_time}</div>
+                        <div className='text-center text-[0.9vw] text-[#593f68]'>{recipe.sub_heading}</div>
                     </div>
                 ))} 
                 <div className='col-span-2 col-start-2'><button className='bg-orange-500 w-full rounded-full text-white py-3 hover:bg-orange-600 transition-all duration-300 '>Show More</button></div>
