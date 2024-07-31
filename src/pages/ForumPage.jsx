@@ -84,7 +84,7 @@ function ForumPage() {
         ]
     return (
 
-        <div className='w-full h-[200vh] pt-16 bg-custom-gradient'>
+        <div className='w-full h-[200vh] pt-32 bg-custom-gradient'>
             <div className=' h-60 w-4/6 mx-auto flex flex-col font-poppins'>
                 <div className='top rounded-xl bg-[#FFA13B] py-4 px-6 w-full flex justify-center items-center'>
                     <div className='h-14 mr-5'><img className='h-full mt-1 outline-none' src={ForumIcon} /></div>
@@ -99,7 +99,7 @@ function ForumPage() {
                             <div className='image rounded-2xl rounded-es-sm overflow-hidden w-1/5'><img className='w-full' src={post.Image} alt="" /></div>
                             <div className='right w-4/5 h-full py-4 px-10 '>
                                 <div className='top flex justify-between items-center'>
-                                    <div className='title text-lg font-bold text-black'>{post.Title}</div>
+                                    <div className='title text font-bold text-black'>{post.Title}</div>
                                     <div className='like h-10'><img className={post.likes == true ? "h-full" : "h-full grayscale"} src={Love} /></div>
                                 </div>
                                 <div className='tags w-full flex justify-start items-center'>
@@ -107,14 +107,14 @@ function ForumPage() {
 
                                 </div>
                                 <div className='bottom flex justify-between items-center'>
-                                    <div className='flex flex-col justify-between items-center'>
+                                    <div className='flex flex-col justify-between items-center mb-10'>
                                         <div>By {post.Author}</div>
                                         <div>{post.Posting_date}</div>
                                     </div>
 
-                                    <div>{post.No_of_views} views</div>
-                                    <div>{post.No_of_likes} likes</div>
-                                    <div>{post.No_of_comments} comments</div>
+                                    <div className='text-base'>{post.No_of_views} views</div>
+                                    <div className='text-base'>{post.No_of_likes} likes</div>
+                                    <div className='text-base'>{post.No_of_comments} comments</div>
                                 </div>
 
                             </div>

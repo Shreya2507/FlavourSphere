@@ -3,6 +3,7 @@ import Main from "../layout/Main";
 import Home from "../pages/home/Home";
 import ForumPage from "../pages/ForumPage";
 import Signup from "../components/Signup";
+import Recipes from "../components/Recipes";
 
 const router = createBrowserRouter([
   {
@@ -16,6 +17,10 @@ const router = createBrowserRouter([
       {
         path: "forum",
         element: <ForumPage />,
+      },
+      {
+        path: "recipes",
+        element: <Recipes />,
       },
     ],
   },
