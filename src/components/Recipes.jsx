@@ -82,30 +82,50 @@ function Recipes() {
 
 
     return (
-        <div className=' w-full h-screen mt-24 font-primary '>
-            <div className='bg-orange-200 flex items-center h-1/3 pt-10 text-black'>
-                <div className='w-1/2 text-center flex flex-col justify-between gap-7 items-center m-auto'>
-                    <div className='text-3xl font-extrabold '>Food For the Love of Delicious <span className='text-orange-500'>Food</span></div>
-                    <div className='text-lg'>Come with family and feel the joy of mouthwatering sweet treats like Tiramisu, Chocolate Fondue, Creme Brülée, Macarons, and more, all at affordable prices.</div>
-                </div>
+      <div className=" max-w-screen-2xl container mx-auto xl:px-24 px-4 py-20 bg-custom-gradient min-h-screen">
+        <div className="bg-yellow rounded-2xl flex items-center h-1/3 pt-10 text-black">
+          <div className="w-1/2 text-center flex flex-col justify-between gap-7 items-center m-auto">
+            <div className="text-3xl font-extrabold ">
+              Food For the Love of Delicious{" "}
+              <span className="text-orange-500">Food</span>
             </div>
-
-            <div className='grid grid-cols-2 w-full gap-6 p-10 md:grid-cols-3 lg:grid-cols-4'>
-                {recipes.map((recipe, index) => (
-                    <div key={index} className="card h-50 w-full p-7 flex flex-col justify-start items-center bg-orange-400 rounded-3xl">
-                        <div className='w-11/12 mb-2 overflow-hidden rounded-[12px]'><img className='w-full' src={recipe.image} /></div>
-                        <div className='h-[0.5px] w-full bg-gray-500 opacity-40 mb-3'></div>
-                        <div className='bg-black rounded-lg text-[1.2vw] text-white px-7 mb-2 text-center'>{recipe.name}</div>
-                        <div className='bg-white rounded-full text-[1.0vw] text-black px-3 mb-5'>Cook time : {recipe.cook_time}</div>
-                        <div className='text-center text-[0.9vw] text-[#593f68]'>{recipe.sub_heading}</div>
-                    </div>
-                ))} 
-                <div className='col-span-2 col-start-2'><button className='bg-orange-500 w-full rounded-full text-white py-3 hover:bg-orange-600 transition-all duration-300 '>Show More</button></div>
-
+            <div className="text-lg">
+              Come with family and feel the joy of mouthwatering sweet treats
+              like Tiramisu, Chocolate Fondue, Creme Brülée, Macarons, and more,
+              all at affordable prices.
             </div>
-            
+          </div>
         </div>
-    )
+
+        <div className="grid grid-cols-2 w-full gap-6 p-10 md:grid-cols-3 lg:grid-cols-4">
+          {recipes.map((recipe, index) => (
+            <div
+              key={index}
+              className="card h-50 w-full p-7 flex flex-col justify-start items-center bg-orange-400 rounded-3xl"
+            >
+              <div className="w-11/12 mb-2 overflow-hidden rounded-full">
+                <img className="w-full" src={recipe.image} />
+              </div>
+              <div className="h-[0.5px] w-full bg-gray-500 opacity-40 mb-3"></div>
+              <div className="bg-black rounded-lg text-[1.2vw] text-white px-7 mb-2 text-center">
+                {recipe.name}
+              </div>
+              <div className="bg-white rounded-full text-[1.0vw] text-black px-3 mb-5">
+                Cook time : {recipe.cook_time}
+              </div>
+              <div className="text-center text-[0.9vw] text-[#593f68]">
+                {recipe.sub_heading}
+              </div>
+            </div>
+          ))}
+          <div className="col-span-2 col-start-2">
+            <button className="bg-orange-500 w-full rounded-full text-white py-3 hover:bg-orange-600 transition-all duration-300 ">
+              Show More
+            </button>
+          </div>
+        </div>
+      </div>
+    );
 }
 
 export default Recipes
