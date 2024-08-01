@@ -103,7 +103,7 @@ function Recipes() {
               key={index}
               className="card h-50 w-full p-7 flex flex-col justify-start items-center bg-orange-400 rounded-3xl"
             >
-              <div className="w-11/12 mb-2 overflow-hidden rounded-full">
+              <div className="w-11/12 mb-2 overflow-hidden rounded-[12px]">
                 <img className="w-full" src={recipe.image} />
               </div>
               <div className="h-[0.5px] w-full bg-gray-500 opacity-40 mb-3"></div>
