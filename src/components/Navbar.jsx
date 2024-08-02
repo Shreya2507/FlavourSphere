@@ -25,25 +25,37 @@ const Navbar = () => {
   const navItems = (
     <>
       <li>
-        <a href="/" className="text-white text-xl hover:underline">
+        <a
+          href="/"
+          className="text-white text-xl hover:text-button hover:bg-transparent"
+        >
           Home
         </a>
       </li>
 
       <li>
-        <a href="/recipes" className="text-white text-xl hover:underline">
+        <a
+          href="/recipes"
+          className="text-white text-xl hover:text-button hover:bg-transparent"
+        >
           Recipes
         </a>
       </li>
 
       <li>
-        <a href="/forum" className="text-white text-xl hover:underline">
+        <a
+          href="/forum"
+          className="text-white text-xl hover:text-button hover:bg-transparent"
+        >
           Forum
         </a>
       </li>
 
       <li>
-        <a href="/contactUs" className="text-white text-xl hover:underline">
+        <a
+          href="/contactUs"
+          className="text-white text-xl hover:text-button hover:bg-transparent"
+        >
           Contact Us
         </a>
       </li>
@@ -83,7 +95,7 @@ const Navbar = () => {
               {navItems}
             </ul>
           </div>
-          <a href="/" className="h-20">
+          <a href="/profile" className="h-20">
             <img className="h-full w-full" src={logo} alt="" />
           </a>
         </div>
