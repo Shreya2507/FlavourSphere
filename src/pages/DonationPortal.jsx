@@ -125,7 +125,7 @@ const DonationPortal = () => {
                 <td className="bg-[#ecc6c6] text-white">{location.address}</td>
                 <td className="bg-[#e4a9a9] text-gray-800">{location.city}</td>
                 <td className="bg-[#ecc6c6] text-gray-100">{location.review}</td>
-                <td className="bg-[#e4a9a9] text-gray-800">{location.price}</td>
+                <td className="bg-[#e4a9a9] text-gray-800">{location.reach}</td>
               </tr>
             ))}
           </tbody>
