@@ -1,4 +1,5 @@
 import React from 'react'
+import { Link } from 'react-router-dom';
 
 const Doner = () => {
     return (
@@ -15,9 +16,11 @@ const Doner = () => {
             <button className="mx-10 btn hover:bg-[#ba4545] hover:border-none rounded-full border-none bg-[#D95B5B] text-white px-8 py-3 rounded-full border-none">
               Acceptor
             </button>
-            <button className="btn hover:bg-[#ba4545] hover:border-none rounded-full border-none bg-[#D95B5B] text-white px-8 py-3 rounded-full border-none">
-              Donor
-            </button>
+            <Link to="/Donationportal">
+              <button className="btn hover:bg-[#ba4545] hover:border-none rounded-full border-none bg-[#D95B5B] text-white px-8 py-3 rounded-full border-none">
+                Donor
+              </button>
+            </Link>
           </div>
         </div>
       </div>

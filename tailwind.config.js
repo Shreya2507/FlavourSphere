@@ -13,7 +13,7 @@ export default {
         "footer-gradient":
           "linear-gradient(to bottom, #FFFFFF 5%,#FDEBD2 15%, #FBE8A8 20%, #FEC403 48%, #FE9803 70%, #FE8603 90%)",
         "doner-gradient":
-          "linear-gradient(to bottom, #FFFFFF 0%,#FFEBEB 5%, #FFEBEB 20%,#FFFFFF 100%)",
+          "linear-gradient(to bottom, #FFFFFF 0%,#FFEBEB 5%, #FFEBEB 20%,#FFFFFF 50%)",
       },
       colors: {
         prigmayBG: "#FCFCFC",
