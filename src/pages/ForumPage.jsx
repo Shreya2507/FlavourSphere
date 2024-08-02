@@ -65,14 +65,14 @@ function ForumPage() {
 
   return (
     <div className=" max-w-screen-2xl container mx-auto min-h-screen pt-32 py-10 bg-custom-gradient">
-      <div className="container min-h-60 w-4/6 mx-auto flex flex-col font-poppins">
+      <div className="container min-h-60 lg:w-4/6 mx-auto flex flex-col font-poppins w-11/12">
         <div className="glass top rounded-xl bg-[#FFA13B] py-4 px-6 w-full flex justify-center items-center">
-          <div className="h-14 mr-5">
+          <div className=" h-12 w-12 lg:h-14 lg:w-14 lg:mr-5">
             <img className="h-full mt-1 outline-none" src={ForumIcon} />
           </div>
           <div className="w-3/4 h-3/4 mr-5">
             <input
-              className="w-full  rounded-md px-4 py-2 focus:outline-none active:border-[#FF6934] placeholder:text-gray-500 bg-gray-100"
+              className="w-full m-2 lg:m-0 rounded-md px-4 py-2 focus:outline-none active:border-[#FF6934] placeholder:text-gray-500 bg-gray-100  lg:text-base text-xs"
               type="text"
               name=""
               id=""
@@ -80,7 +80,7 @@ function ForumPage() {
             />
           </div>
           <div>
-            <button className="bg-[#FF6934] hover:bg-[#ff4400] rounded-md text-white font-semibold px-4 py-2 transition-all duration-300">
+            <button className="bg-[#FF6934] hover:bg-[#ff4400] rounded-md text-white font-semibold lg:px-4 lg:py-2 text-[10px] lg:text-base transition-all duration-300">
               Create Post
             </button>
           </div>
@@ -90,15 +90,15 @@ function ForumPage() {
           {posts.map((post, index) => (
             <div
               key={index}
-              className="post bg-[#FFA13B] opacity-90 rounded-xl w-full py-5 px-8 mb-5 flex justify-between items-center"
+              className="post bg-[#FFA13B] opacity-90 rounded-xl w-full py-5 px-8 mb-5 flex justify-between items-center lg:flex-row flex-col"
             >
-              <div className="image rounded-2xl overflow-hidden w-1/5">
-                <img className="w-full" src={post.Image} alt="" />
+              <div className="image rounded-2xl overflow-hidden lg:w-1/5 lg:h-/5 w-full ">
+                <img className="w-full h-full" src={post.Image} alt="" />
               </div>
-              <div className="right w-4/5 h-full py-4 px-10">
-                <div className="top flex justify-between items-center">
-                  <div className="title font-bold text-black">{post.Title}</div>
-                  <div className="like h-10">
+              <div className="right w-full lg:w-4/5 h-full py-4 lg:px-10 px-0 ">
+                <div className="top flex justify-between items-center w-full">
+                  <div className="text-md lg:text-3xl font-bold text-black">{post.Title}</div>
+                  <div className="h-10 w-10">
                     <img
                       className={post.likes ? "h-full" : "h-full grayscale"}
                       src={Love}
@@ -115,14 +115,14 @@ function ForumPage() {
                     </div>
                   ))}
                 </div>
-                <div className="bottom flex justify-between items-center">
-                  <div className="flex flex-col justify-between items-center mb-10">
-                    <div>By {post.Author}</div>
-                    <div>{post.Posting_date}</div>
+                <div className="flex justify-between items-end mt-10">
+                  <div className="flex h-full flex-col justify-between items-start">
+                    <div className="text-[10px]">By {post.Author}</div>
+                    <div className="text-[10px]">{post.Posting_date}</div>
                   </div>
-                  <div className="text-base">{post.No_of_views} views</div>
-                  <div className="text-base">{post.No_of_likes} likes</div>
-                  <div className="text-base">
+                  <div className="lg:text-base text-[10px]">{post.No_of_views} views</div>
+                  <div className="lg:text-base text-[10px]">{post.No_of_likes} likes</div>
+                  <div className="lg:text-base text-[10px]">
                     {post.No_of_comments} comments
                   </div>
                 </div>

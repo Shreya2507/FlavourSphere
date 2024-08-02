@@ -88,7 +88,7 @@ function RecipeDetail() {
                     <div className='w-5/6 text-justify'><ul className='pl-5 list-disc'>{detail.optionalItems.map((step, index) => <li className='mb-2' key={index}>{step}</li>)}</ul></div>
                 </div>
 
-                <div className='video px-32 w-full flex flex-col justify-center items-start mt-20'>
+                <div className='video px-32 w-full flex flex-col justify-center items-start mt-20 mb-10'>
                     <div className=' w-full flex justify-start gap-2 items-center mb-5'>
                         <div className='text-2xl font-semibold'>Video</div>
                         <div className='h-[0.5px] w-[790px] bg-gray-500'></div>
@@ -102,8 +102,51 @@ function RecipeDetail() {
                         referrerPolicy="strict-origin-when-cross-origin"
                         allowFullScreen
                     ></iframe>
+                </div>
+
+                <div className='w-full px-32 mb-16 text-xl'>Posted By <span className='font-bold text-2xl'>Sarah Mitchell</span></div> 
+                
+
+                <div className="middle w-full px-32 flex flex-col justify-center items-left ">
+                    <div className='w-full text-xl text-black mb-2'>Comments</div>
+
+                    <div className='bg-white px-2 py-2 w-1/2 mb-2 flex justify-start gap-5 items-center'>
+                        <div className='rounded-full w-16 overflow-hidden'><img src="/recipeDetail/p1.jpg" alt="" /></div>
+                        <div>
+                            <div className=' text-base'>mcjaxx25<span className='ml-5 text-gray-600 text-sm'>11 hours ago</span></div>
+                            <div className='text-base'>Great Recipe ! My family loved it!</div>
+                            <div className='mt-2 text-gray-600 text-sm'><a href="">Reply</a></div>
+                        </div>
+                    </div>
+
+                    <div className='bg-white px-2 py-2 w-1/2 mb-2 flex justify-start gap-5 items-center'>
+                        <div className='rounded-full w-16 overflow-hidden'><img src="/recipeDetail/p2.jpg" alt="" /></div>
+                        <div>
+                            <div className=' text-base'>user-qs8n06de2f<span className='ml-5 text-gray-600 text-sm'>2 hours ago</span></div>
+                            <div className='text-base'>@mcjaxx25 Todo los platos se ven DELICIOSOS. 👏👏</div>
+                            <div className='mt-2 text-gray-600 text-sm'><a href="">Reply</a></div>
+                        </div>
+                    </div>
+
+                    <div className='bg-white px-2 py-2 w-1/2 mb-2 flex justify-start gap-5 items-center'>
+                        <div className='rounded-full w-24 overflow-hidden'><img src="/recipeDetail/p3.jpg" alt="" /></div>
+                        <div>
+                            <div className=' text-base'>mercedesmartinezl 22<span className='ml-5 text-gray-600 text-sm'>12 minutes ago</span></div>
+                            <div className='text-base'>Bce рецепты хорошие, последний рецепт как пицца овощная понравилась. ❤️</div>
+                            <div className='mt-2 text-gray-600 text-sm'><a href="">Reply</a></div>
+                        </div>
+                    </div>
+
+                
+                    <div className="w-1/5 mt-2 mb-10">
+                        <button className="text-sm bg-orange-600 w-full rounded-full text-white py-2 hover:bg-orange-700 transition-all duration-300 ">
+                            Comment
+                        </button>
+                    </div>
+
 
                 </div>
+
 
 
 

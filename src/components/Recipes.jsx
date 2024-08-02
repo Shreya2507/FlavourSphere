@@ -121,12 +121,13 @@ function Recipes() {
             </div>
             </a>
           ))}
-          {/* <div className="col-span-2 col-start-2">
-            <button className="bg-orange-500 w-full rounded-full text-white py-3 hover:bg-orange-600 transition-all duration-300 ">
+          
+        </div>
+        <div className=" w-full lg:w-5/6 m-auto flex justify-center items-center mt-5">
+            <button className="bg-orange-500 w-1/2 text-sm rounded-full text-white py-3 hover:bg-orange-600 transition-all duration-300 ">
               Show More
             </button>
-          </div> */}
-        </div>
+          </div>
       </div>
     );
 }
