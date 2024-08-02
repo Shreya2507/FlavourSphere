@@ -96,12 +96,14 @@ function Recipes() {
             </div>
           </div>
         </div>
+      
 
         <div className="grid grid-cols-2 lg:grid-cols-4 w-full gap-6 p-1 lg:p-10">
           {recipes.map((recipe, index) => (
+            <a href="/recipePage">
             <div
               key={index}
-              className="card h-50 w-full p-3 lg:p-7 flex flex-col justify-start items-center bg-orange-400 rounded-3xl"
+              className="card h-full w-full p-3 lg:p-7 flex flex-col justify-start items-center bg-orange-400 rounded-3xl"
             >
               <div className="w-11/12 mb-2 overflow-hidden rounded-[12px]">
                 <img className="w-full" src={recipe.image} />
@@ -117,6 +119,7 @@ function Recipes() {
                 {recipe.sub_heading}
               </div>
             </div>
+            </a>
           ))}
           {/* <div className="col-span-2 col-start-2">
             <button className="bg-orange-500 w-full rounded-full text-white py-3 hover:bg-orange-600 transition-all duration-300 ">

@@ -5,6 +5,7 @@ import ForumPage from "../pages/ForumPage";
 import Signup from "../components/Signup";
 import Recipes from "../components/Recipes";
 import Profile from "../components/Profile";
+import RecipeDetail from "../components/RecipeDetail";
 
 const router = createBrowserRouter([
   {
@@ -26,6 +27,10 @@ const router = createBrowserRouter([
       {
         path: "profile",
         element: <Profile />,
+      },
+      {
+        path: "recipePage",
+        element: <RecipeDetail /> ,
       },
     ],
   },
