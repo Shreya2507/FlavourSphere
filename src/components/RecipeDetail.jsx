@@ -94,18 +94,19 @@ function RecipeDetail() {
                         <div className='h-[0.5px] w-[790px] bg-gray-500'></div>
                     </div>
                     <iframe
-                        width="864"
-                        height="486"
+                        width="900px"
+                        height="500px"
                         src={detail.videoUrl}
                         title={detail.recipeName}
                         allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
                         referrerPolicy="strict-origin-when-cross-origin"
                         allowFullScreen
                     ></iframe>
+
                 </div>
 
-                <div className='w-full px-32 mb-16 text-xl'>Posted By <span className='font-bold text-2xl'>Sarah Mitchell</span></div> 
-                
+                <div className='w-full px-32 mb-16 text-xl'>Posted By <span className='font-bold text-2xl'>Sarah Mitchell</span></div>
+
 
                 <div className="middle w-full px-32 flex flex-col justify-center items-left ">
                     <div className='w-full text-xl text-black mb-2'>Comments</div>
@@ -137,10 +138,10 @@ function RecipeDetail() {
                         </div>
                     </div>
 
-                
+
                     <div className="w-1/5 mt-2 mb-10">
                         <button className="text-sm bg-orange-600 w-full rounded-full text-white py-2 hover:bg-orange-700 transition-all duration-300 ">
-                            Comment
+                            Comment Now
                         </button>
                     </div>
 
