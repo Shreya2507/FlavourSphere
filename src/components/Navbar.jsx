@@ -48,7 +48,7 @@ const Navbar = () => {
           href="/forum"
           className="text-white text-xl hover:text-button hover:bg-transparent"
         >
-          Forum
+          Pages
         </a>
       </li>
 
