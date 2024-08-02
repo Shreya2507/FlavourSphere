@@ -7,7 +7,7 @@ const donationLocations = [
     address: "123 Main St",
     city: "New York",
     review: "4.5",
-    reach: "10",
+    reach: "1000",
   },
   {
     id: 2,
@@ -15,7 +15,7 @@ const donationLocations = [
     address: "456 Oak St",
     city: "Los Angeles",
     review: "4.0",
-    reach: "15",
+    reach: "1500",
   },
   {
     id: 3,
@@ -23,7 +23,7 @@ const donationLocations = [
     address: "789 Pine St",
     city: "Chicago",
     review: "3.8",
-    reach: "8",
+    reach: "8000",
   },
   {
     id: 4,
@@ -31,7 +31,7 @@ const donationLocations = [
     address: "101 Maple St",
     city: "Houston",
     review: "4.7",
-    reach: "12",
+    reach: "1200",
   },
   {
     id: 5,
@@ -39,7 +39,7 @@ const donationLocations = [
     address: "202 Elm St",
     city: "Phoenix",
     review: "4.2",
-    reach: "9",
+    reach: "9000",
   },
   {
     id: 6,
@@ -47,7 +47,7 @@ const donationLocations = [
     address: "303 Birch St",
     city: "Philadelphia",
     review: "3.9",
-    reach: "11",
+    reach: "1100",
   },
   {
     id: 7,
@@ -55,7 +55,7 @@ const donationLocations = [
     address: "404 Cedar St",
     city: "San Antonio",
     review: "4.4",
-    reach: "14",
+    reach: "1400",
   },
   {
     id: 8,
@@ -63,7 +63,7 @@ const donationLocations = [
     address: "505 Walnut St",
     city: "San Diego",
     review: "4.6",
-    reach: "13",
+    reach: "1300",
   },
   {
     id: 9,
@@ -71,7 +71,7 @@ const donationLocations = [
     address: "606 Chestnut St",
     city: "Dallas",
     review: "3.7",
-    reach: "7",
+    reach: "7000",
   },
   {
     id: 10,
@@ -79,7 +79,7 @@ const donationLocations = [
     address: "707 Spruce St",
     city: "San Jose",
     review: "4.3",
-    reach: "16",
+    reach: "1600",
   },
 ];
 
