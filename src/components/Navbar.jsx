@@ -43,7 +43,7 @@ const Navbar = () => {
       </li>
 
       <li>
-        <a href="/" className="text-white text-xl hover:underline">
+        <a href="/contactUs" className="text-white text-xl hover:underline">
           Contact Us
         </a>
       </li>

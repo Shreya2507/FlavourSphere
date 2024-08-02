@@ -1,5 +1,6 @@
 import React, { useState } from "react";
 
+
 const ContactUsPage = () => {
   const [formData, setFormData] = useState({
     name: "",
@@ -25,16 +26,16 @@ const ContactUsPage = () => {
   };
 
   return (
-    <div className="w-full min-h-screen pt-32 bg-gray-100 flex flex-col items-center">
-      <div className="w-4/6 mx-auto p-6 bg-white shadow-md rounded-lg">
+    <div className=" max-w-screen-2xl container mx-auto xl:px-20 px-4 py-10 mt-20 bg-custom-gradient min-h-screen">
+    
+      <div className="w-1/2 mx-auto p-6 bg-white shadow-md rounded-lg justify-center items-center ">
         <h1 className="text-3xl font-bold mb-6 text-center">Contact Us</h1>
         <form onSubmit={handleSubmit} className="flex flex-col space-y-4">
-          <div>
-            <label
-              htmlFor="name"
-              className="block text-lg font-medium text-gray-700"
-            >
-              Name
+          <div className="form-control">
+            <label htmlFor="name" className="label">
+              <span className="label-text text-lg font-medium text-gray-700">
+                Name
+              </span>
             </label>
             <input
               type="text"
@@ -42,16 +43,15 @@ const ContactUsPage = () => {
               name="name"
               value={formData.name}
               onChange={handleChange}
-              className="mt-1 p-2 w-full border rounded-md"
+              className="input input-bordered w-full"
               required
             />
           </div>
-          <div>
-            <label
-              htmlFor="email"
-              className="block text-lg font-medium text-gray-700"
-            >
-              Email
+          <div className="form-control">
+            <label htmlFor="email" className="label">
+              <span className="label-text text-lg font-medium text-gray-700">
+                Email
+              </span>
             </label>
             <input
               type="email"
@@ -59,30 +59,26 @@ const ContactUsPage = () => {
               name="email"
               value={formData.email}
               onChange={handleChange}
-              className="mt-1 p-2 w-full border rounded-md"
+              className="input input-bordered w-full"
               required
             />
           </div>
-          <div>
-            <label
-              htmlFor="message"
-              className="block text-lg font-medium text-gray-700"
-            >
-              Message
+          <div className="form-control">
+            <label htmlFor="message" className="label">
+              <span className="label-text text-lg font-medium text-gray-700">
+                Message
+              </span>
             </label>
             <textarea
               id="message"
               name="message"
               value={formData.message}
               onChange={handleChange}
-              className="mt-1 p-2 w-full border rounded-md h-32"
+              className="textarea textarea-bordered w-full h-32"
               required
             ></textarea>
           </div>
-          <button
-            type="submit"
-            className="bg-blue-500 hover:bg-blue-700 text-white font-bold py-2 px-4 rounded"
-          >
+          <button type="submit" className="btn btn-primary w-full">
             Send Message
           </button>
         </form>
