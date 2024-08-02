@@ -27,7 +27,6 @@ const ContactUsPage = () => {
 
   return (
     <div className=" max-w-screen-2xl container mx-auto xl:px-20 px-4 py-10 mt-20 bg-custom-gradient min-h-screen">
-    
       <div className="w-1/2 mx-auto p-6 bg-white shadow-md rounded-lg justify-center items-center ">
         <h1 className="text-3xl font-bold mb-6 text-center">Contact Us</h1>
         <form onSubmit={handleSubmit} className="flex flex-col space-y-4">
@@ -43,7 +42,8 @@ const ContactUsPage = () => {
               name="name"
               value={formData.name}
               onChange={handleChange}
-              className="input input-bordered w-full"
+              placeholder="Enter Your Name"
+              className="input input-bordered w-full bg-gray-100"
               required
             />
           </div>
@@ -58,8 +58,9 @@ const ContactUsPage = () => {
               id="email"
               name="email"
               value={formData.email}
+              placeholder="Enter Your Email"
               onChange={handleChange}
-              className="input input-bordered w-full"
+              className="input input-bordered w-full bg-gray-100"
               required
             />
           </div>
@@ -74,11 +75,15 @@ const ContactUsPage = () => {
               name="message"
               value={formData.message}
               onChange={handleChange}
-              className="textarea textarea-bordered w-full h-32"
+              placeholder="Leave a Message here . . ."
+              className="textarea textarea-bordered w-full h-32 bg-gray-100"
               required
             ></textarea>
           </div>
-          <button type="submit" className="btn btn-primary w-full">
+          <button
+            type="submit"
+            className="btn btn-primary w-full text-gray-700  "
+          >
             Send Message
           </button>
         </form>
