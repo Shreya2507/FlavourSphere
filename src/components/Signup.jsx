@@ -5,7 +5,7 @@ import { Link, useNavigate } from "react-router-dom";
 const Signup = () => {
   const navigate = useNavigate();
   return (
-    <div className="min-h-screen bg-footer-gradient flex items-center justify-center">
+    <div className="min-h-screen bg-signup-gradient flex items-center justify-center">
       <div className="rounded-xl max-w-md bg-white shadow w-full mx-auto flex items-center justify-center my-20">
         <div className="modal-action flex flex-col justify-center mt-0">
           <form className="card-body" method="dialog">
