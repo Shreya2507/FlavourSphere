@@ -7,7 +7,7 @@ const donationLocations = [
     address: "123 Main St",
     city: "New York",
     review: "4.5",
-    price: "$10",
+    reach: "1000",
   },
   {
     id: 2,
@@ -15,7 +15,7 @@ const donationLocations = [
     address: "456 Oak St",
     city: "Los Angeles",
     review: "4.0",
-    price: "$15",
+    reach: "1500",
   },
   {
     id: 3,
@@ -23,7 +23,7 @@ const donationLocations = [
     address: "789 Pine St",
     city: "Chicago",
     review: "3.8",
-    price: "$8",
+    reach: "8000",
   },
   {
     id: 4,
@@ -31,7 +31,7 @@ const donationLocations = [
     address: "101 Maple St",
     city: "Houston",
     review: "4.7",
-    price: "$12",
+    reach: "1200",
   },
   {
     id: 5,
@@ -39,7 +39,7 @@ const donationLocations = [
     address: "202 Elm St",
     city: "Phoenix",
     review: "4.2",
-    price: "$9",
+    reach: "9000",
   },
   {
     id: 6,
@@ -47,7 +47,7 @@ const donationLocations = [
     address: "303 Birch St",
     city: "Philadelphia",
     review: "3.9",
-    price: "$11",
+    reach: "1100",
   },
   {
     id: 7,
@@ -55,7 +55,7 @@ const donationLocations = [
     address: "404 Cedar St",
     city: "San Antonio",
     review: "4.4",
-    price: "$14",
+    reach: "1400",
   },
   {
     id: 8,
@@ -63,7 +63,7 @@ const donationLocations = [
     address: "505 Walnut St",
     city: "San Diego",
     review: "4.6",
-    price: "$13",
+    reach: "1300",
   },
   {
     id: 9,
@@ -71,7 +71,7 @@ const donationLocations = [
     address: "606 Chestnut St",
     city: "Dallas",
     review: "3.7",
-    price: "$7",
+    reach: "7000",
   },
   {
     id: 10,
@@ -79,7 +79,7 @@ const donationLocations = [
     address: "707 Spruce St",
     city: "San Jose",
     review: "4.3",
-    price: "$16",
+    reach: "1600",
   },
 ];
 
@@ -111,7 +111,7 @@ const DonationPortal = () => {
               <th className="bg-[#f9c300] text-gray-500">Address</th>
               <th className="bg-[#f9c300] text-gray-500">City</th>
               <th className="bg-[#f9c300] text-gray-500">Review</th>
-              <th className="bg-[#f9c300] text-gray-500">Price</th>
+              <th className="bg-[#f9c300] text-gray-500">Reach</th>
             </tr>
           </thead>
           <tbody>
@@ -125,7 +125,7 @@ const DonationPortal = () => {
                 <td className="bg-[#ecc6c6] text-white">{location.address}</td>
                 <td className="bg-[#e4a9a9] text-gray-800">{location.city}</td>
                 <td className="bg-[#ecc6c6] text-gray-100">{location.review}</td>
-                <td className="bg-[#e4a9a9] text-gray-800">{location.price}</td>
+                <td className="bg-[#e4a9a9] text-gray-800">{location.reach}</td>
               </tr>
             ))}
           </tbody>

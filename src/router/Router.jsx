@@ -8,6 +8,7 @@ import Profile from "../components/Profile";
 import RecipeDetail from "../components/RecipeDetail";
 import ContactUsPage from "../pages/ContactPage";
 import DonationPortal from "../pages/DonationPortal";
+import AcceptorPortal from "../pages/AcceptorPortal";
 
 const router = createBrowserRouter([
   {
@@ -42,6 +43,10 @@ const router = createBrowserRouter([
       {
         path: "DonationPortal",
         element: <DonationPortal/>
+      },
+      {
+        path: "AcceptorPortal",
+        element: <AcceptorPortal/>
       }
       
     ],
