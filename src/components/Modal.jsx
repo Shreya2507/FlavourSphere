@@ -17,6 +17,7 @@ const Modal = () => {
               </label>
               <input
                 type="email"
+                value="admin@gmail.com"
                 placeholder="Enter your Email"
                 className="input input-bordered bg-white"
               />
@@ -27,6 +28,7 @@ const Modal = () => {
               </label>
               <input
                 type="password"
+                value="admin"
                 placeholder="Enter your password"
                 className="input input-bordered bg-white"
               />
@@ -37,13 +39,14 @@ const Modal = () => {
               </label>
             </div>
             {/* Login button */}
-            <div className="form-control mt-4">
-              <input
+
+            <a href="/profile" className="form-control mt-4">
+              <div
                 type="submit"
                 value="Login"
                 className="btn bg-navbarBg hover:bg-[#feb103] hover:border-none border-none text-white shadow-lg"
-              />
-            </div>
+              >Login</div>            
+            </a>
             <p className="text-center my-2 text-[#656565]">
               Do not have an account?{" "}
               <Link to="/signup" className="underline text-button ml-1">
