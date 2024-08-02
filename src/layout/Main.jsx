@@ -9,10 +9,11 @@ const Main = () => {
   return (
     <div>
       <Navbar />
-      <Outlet />      
-      <Footer/>
+      <div className="min-h-screen">
+        <Outlet />
+      </div>
+      <Footer />
     </div>
   );
 };
-
 export default Main;

@@ -16,10 +16,7 @@ const router = createBrowserRouter([
         path: "/",
         element: <Home />,
       },
-      {
-        path: "forum",
-        element: <ForumPage />,
-      },
+
       {
         path: "recipes",
         element: <Recipes />,
@@ -30,13 +27,17 @@ const router = createBrowserRouter([
       },
       {
         path: "recipePage",
-        element: <RecipeDetail /> ,
+        element: <RecipeDetail />,
       },
     ],
   },
   {
     path: "/signup",
     element: <Signup />,
+  },
+  {
+    path: "forum",
+    element: <ForumPage />,
   },
 ]);
 export default router;
