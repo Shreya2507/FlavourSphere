@@ -12,6 +12,7 @@ const Main = () => {
       <div className="min-h-screen">
         <Outlet />
       </div>
+
       <Footer />
     </div>
   );

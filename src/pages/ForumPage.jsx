@@ -64,7 +64,7 @@ function ForumPage() {
   ];
 
   return (
-    <div className=" w-full min-h-screen pt-32 py-10 bg-custom-gradient">
+    <div className=" max-w-screen-2xl container mx-auto min-h-screen pt-32 py-10 bg-custom-gradient">
       <div className="container min-h-60 w-4/6 mx-auto flex flex-col font-poppins">
         <div className="glass top rounded-xl bg-[#FFA13B] py-4 px-6 w-full flex justify-center items-center">
           <div className="h-14 mr-5">

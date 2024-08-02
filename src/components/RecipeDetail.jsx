@@ -82,7 +82,7 @@ function RecipeDetail() {
 
 
                 <div className="middle w-full px-32 flex flex-col justify-center items-left ">
-                    <div className='w-60 text-xl bg-white rounded-xl px-5 py-2 text-black mb-2'>It's Cooking Time....</div>
+                    <div className='w-60 text-xl bg-white rounded-xl px-5 py-2 text-black mb-2'> It's Cooking Time....</div>
                     <div className='w-5/6 text-justify mb-5'>{detail.cookSteps.map((step, index) => <div className='mb-2' key={index}>{step}</div>)}</div>
                     <div className='text-lg mb-1'>Optional Additions</div>
                     <div className='w-5/6 text-justify'><ul className='pl-5 list-disc'>{detail.optionalItems.map((step, index) => <li className='mb-2' key={index}>{step}</li>)}</ul></div>
