@@ -27,7 +27,7 @@ const Navbar = () => {
       <li>
         <a
           href="/"
-          className="text-white text-xl hover:text-button hover:bg-transparent"
+          className="text-white text-xl hover:text-button hover:bg-transparent "
         >
           Home
         </a>
@@ -35,6 +35,7 @@ const Navbar = () => {
 
       <li>
         <a
+        
           href="/recipes"
           className="text-white text-xl hover:text-button hover:bg-transparent"
         >
@@ -66,11 +67,12 @@ const Navbar = () => {
       className={`bg-[#f8b212] max-w-screen-2xl container mx-auto fixed top-0 left-0 right-0 transition-all duration-300 ease-in-out`}
     >
       <div
+       
         className={`navbar xl:px-24 ${
           isSticky ? "shadow-md transition-all duration-300 ease-in-out" : ""
         }`}
       >
-        <div className="navbar-start">
+        <div className=" navbar-start" >
           <div className="dropdown ">
             <div tabIndex={0} role="button" className="btn btn-ghost lg:hidden">
               <svg
@@ -100,7 +102,7 @@ const Navbar = () => {
           </a>
         </div>
         <div className="navbar-center hidden lg:flex">
-          <ul className="menu menu-horizontal px-1">
+          <ul className="menu menu-horizontal px-1 ">
             {/* nav Items */}
             {navItems}
           </ul>
