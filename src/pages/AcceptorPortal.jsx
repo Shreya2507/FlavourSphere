@@ -129,18 +129,13 @@ const AcceptorPortal = () => {
               <span className="text-yellow">Accepting With Love</span>
             </h2>
           </div>
-          <div className="bg-gradient-to-r from-red-400 via-yellow-500 to-orange-600 p-4 rounded-full shadow-lg flex items-center">
-            <h2 className="text-gray-200 text-2xl font-bold md:leading-snug leading-snug text-center">
-              Hello Ngo!
-            </h2>
-          </div>
         </div>
 
-        <div>
+        <div className="flex justify-center mt-10">
           <img
             src="/images/AcceptorPortal/Acceptor3.png"
             alt="Donation Portal"
-            className="w-[500px] h-[500px] flex justify-center mt-10"
+            className="w-full max-w-[500px] h-auto"
           />
         </div>
       </div>
