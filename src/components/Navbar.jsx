@@ -96,7 +96,7 @@ const Navbar = () => {
               {navItems}
             </ul>
           </div>
-          <a href="/profile" className="h-20">
+          <a href="/" className="h-20">
             <img className="h-full w-full" src={logo} alt="" />
           </a>
         </div>
