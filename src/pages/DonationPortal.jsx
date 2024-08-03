@@ -100,7 +100,7 @@ const DonationPortal = () => {
         <div className="md:w-1/2 space-y-7 px-10 p-6 rounded-lg bg-gradient-to-r from-yellow-400 via-yellow-500 to-orange-600 shadow-lg">
           <div className="bg-gradient-to-r from-yellow-400 via-yellow-500 to-orange-600 p-4 rounded-xl flex items-center">
             <h2 className="text-2xl font-thinbold md:leading-snug leading-snug text-center text-red-900">
-              Hello User Ngo!
+              Hello Sarah!
             </h2>
           </div>
           <h2 className="text-navbarBg md:text-5xl text-2xl font-bold md:leading-snug leading-snug">

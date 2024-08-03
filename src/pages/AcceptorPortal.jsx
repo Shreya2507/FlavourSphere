@@ -140,7 +140,7 @@ const AcceptorPortal = () => {
         </div>
       </div>
 
-      <div className="overflow-x-auto flex justify-center mb-20 mt-0">
+      <div className="overflow-x-auto  ">
         <table className="table table-zebra w-full">
           <thead>
             <tr>

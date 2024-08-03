@@ -25,7 +25,7 @@ const ContactUsPage = () => {
   };
 
   return (
-    <div className="max-w-screen-2xl container mx-auto xl:px-20 px-4 py-10 mt-20 bg-contact-gradient min-h-screen">
+    <div className="max-w-screen-2xl container mx-auto xl:px-20 px-4 py-20 mt-20 bg-contact-gradient min-h-screen">
       <div className="bg-opacity-30 bg-yellow w-full sm:w-3/4 md:w-1/2 lg:w-1/3 mx-auto p-6 shadow-md rounded-lg">
         <h1 className="text-4xl md:text-3xl font-bold mb-6 text-center text-button">
           Contact Us
