@@ -16,6 +16,8 @@ export default {
           "linear-gradient(to bottom, #FFFFFF 0%,#FFEBEB 5%, #FFEBEB 20%,#FFFFFF 50%)",
         "signup-gradient":
           "linear-gradient(to bottom, #FFFFFF 10%,#FDEBD2 20%, #FBE8A8 70%,  #FE8603 100%)",
+        "contact-gradient":
+          "linear-gradient(to bottom, #FFFFFF  0%,#FBE8A8 20%,  #FDEBD2 70%,  #FFFFFF  100%)",
       },
       colors: {
         prigmayBG: "#FCFCFC",
