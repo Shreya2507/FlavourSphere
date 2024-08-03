@@ -85,7 +85,7 @@ function Profile() {
                         <a href="/recipePage">
                         <div
                             key={index}
-                            className="card w-full p-2 lg:p-5 flex flex-col justify-start items-center bg-orange-400 rounded-3xl"
+                            className="card h-full w-full p-2 lg:p-5 flex flex-col justify-start items-center bg-orange-400 rounded-3xl"
                         >
                             <div className="w-11/12 mb-2 overflow-hidden rounded-[12px]">
                                 <img className="w-full" src={recipe.image} />
