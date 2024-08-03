@@ -1,4 +1,5 @@
 import React, { useEffect } from "react";
+import { AiOutlineUser } from "react-icons/ai";
 
 const donationLocations = [
   {
@@ -121,17 +122,20 @@ const AcceptorPortal = () => {
   return (
     <div className="max-w-screen-2xl container mx-auto xl:px-24 px-3 py-10 bg-custom-gradient min-h-screen">
       <div className="py-20 flex flex-col justify-between items-center gap-3">
-        <div className="space-y-7 bg-red-500 opacity-80 p-6 rounded-lg">
-          <h2 className="text-navbarBg md:text-3xl text-2xl  font-bold md:leading-snug leading-snug">
-            The Acceptor's Portal{" "}
-            <span className="text-yellow">Accepting Contributions</span>
-          </h2>
+        <div className="flex items-center space-x-4">
+          <div className="space-y-7 bg-gradient-to-r from-yellow-400 via-yellow-500 to-orange-600 p-8 rounded-full shadow-lg flex items-center">
+            <h2 className="text-orange-500 md:text-3xl text-2xl font-bold md:leading-snug leading-snug ">
+              The Acceptor's Portal{" "}
+              <span className="text-yellow">Accepting With Love</span>
+            </h2>
+          </div>
         </div>
-        <div>
+
+        <div className="flex justify-center mt-10">
           <img
             src="/images/AcceptorPortal/Acceptor3.png"
             alt="Donation Portal"
-            className="w-[500px] h-[500px] flex justify-center mt-10 "
+            className="w-full max-w-[500px] h-auto"
           />
         </div>
       </div>

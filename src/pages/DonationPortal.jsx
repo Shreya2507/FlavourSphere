@@ -97,7 +97,12 @@ const DonationPortal = () => {
         </div>
 
         {/* texts */}
-        <div className="md:w-1/2 space-y-7 px-10 border border-yellow-500 p-6 rounded-lg">
+        <div className="md:w-1/2 space-y-7 px-10 p-6 rounded-lg bg-gradient-to-r from-yellow-400 via-yellow-500 to-orange-600 shadow-lg">
+          <div className="bg-gradient-to-r from-yellow-400 via-yellow-500 to-orange-600 p-4 rounded-xl flex items-center">
+            <h2 className="text-2xl font-thinbold md:leading-snug leading-snug text-center text-red-900">
+              Hello User Ngo!
+            </h2>
+          </div>
           <h2 className="text-navbarBg md:text-5xl text-2xl font-bold md:leading-snug leading-snug">
             Have Some Left Over Food{" "}
             <span className="text-yellow">Worry NOT</span>
@@ -136,7 +141,12 @@ const DonationPortal = () => {
                 </td>
                 <td className="bg-[#e4a9a9] text-gray-800">{location.reach}</td>
                 <td className="bg-[#e4a9a9] text-gray-800">
-                  <button style={{ backgroundColor: 'red', color: 'white', padding: '10px 20px', border: 'none', borderRadius: '50px', cursor: 'pointer' }} className="btn btn-sm ">Donate</button>
+                  <button
+                   
+                    className="btn btn-sm bg-button hover:bg-[#ba4545] hover:border-none rounded-full border-none px-6 text-white gap-2"
+                  >
+                    Donate
+                  </button>
                 </td>
               </tr>
             ))}
