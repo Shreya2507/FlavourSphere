@@ -62,6 +62,3 @@ The development of FlavourSphere involves:
 - **[Ashutosh Gairola](https://github.com/Ashutosh-Gairola)**
 - **[Khyati Dhawan](https://github.com/KhyatiDhawan22)** 
 - **[Saransh Shukla](https://github.com/saransh-2021)**
-
-## License
-[MIT License](LICENSE)
