@@ -1,6 +1,6 @@
 import React from "react";
 import { FaFacebookF, FaGithub, FaGoogle } from "react-icons/fa";
-import { Link, useNavigate } from "react-router-dom";
+import { Link, Navigate, useNavigate } from "react-router-dom";
 
 const Signup = () => {
   const navigate = useNavigate();
@@ -18,6 +18,7 @@ const Signup = () => {
               </label>
               <input
                 type="email"
+                value="admin@gmail.com"
                 placeholder="Enter your email"
                 className="input input-bordered bg-white"
               />
@@ -28,6 +29,7 @@ const Signup = () => {
               </label>
               <input
                 type="password"
+                value="admin"
                 placeholder="Enter your password"
                 className="input input-bordered bg-white"
               />
@@ -38,19 +40,20 @@ const Signup = () => {
               </label>
             </div>
             {/* Sign Up button */}
-            <div className="form-control mt-6">
-              <input
+            <a href="/profile" className="form-control mt-6">
+              <div
                 type="submit"
                 value="Signup"
+              
                 className="btn bg-navbarBg hover:bg-[#feb103] hover:border-none border-none text-white shadow-lg"
-              />
-            </div>
+              >Signup</div>
+            </a>
             <p className="text-center my-2 text-[#656565]">
               Have an account?{" "}
-              <Link to="/" className="underline text-button ml-1">
+              <Link to="/profile" className="underline text-button ml-1">
                 Login
               </Link>
-              <Link to="/">
+              <Link to="/profile">
                 <button
                   htmlFor="my_modal"
                   onClick={() => document.getElementById("my_modal").close()}

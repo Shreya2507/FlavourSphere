@@ -82,6 +82,7 @@ function Profile() {
                 <div className='text-white text-3xl'>Recipes Posted</div>
                 <div className="grid grid-cols-2 w-full gap-6 p-5 md:grid-cols-3 lg:grid-cols-4">
                     {recipes.map((recipe, index) => (
+                        <a href="/recipePage">
                         <div
                             key={index}
                             className="card w-full p-2 lg:p-5 flex flex-col justify-start items-center bg-orange-400 rounded-3xl"
@@ -100,6 +101,7 @@ function Profile() {
                                 {recipe.sub_heading}
                             </div>
                         </div>
+                        </a>
                     ))}
                 </div>
 
