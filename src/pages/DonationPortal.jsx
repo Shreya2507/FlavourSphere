@@ -1,4 +1,4 @@
-import React from "react";
+import React, { useEffect } from "react";
 
 const donationLocations = [
   {
@@ -84,6 +84,10 @@ const donationLocations = [
 ];
 
 const DonationPortal = () => {
+  useEffect(() => {
+    window.scrollTo(0, 0);
+  }, []);
+
   return (
     <div className="max-w-screen-2xl container mx-auto xl:px-24 px-3 py-10 bg-custom-gradient min-h-screen">
       <div className="py-20 flex flex-row justify-between items-center gap-3">
@@ -122,9 +126,13 @@ const DonationPortal = () => {
               >
                 <th className="bg-button text-gray-300">{index + 1}</th>
                 <td className="bg-[#e4a9a9] text-gray-800">{location.group}</td>
-                <td className="bg-[#ecc6c6] text-white">{location.address}</td>
+                <td className="bg-[#e4a9a9] text-gray-800">
+                  {location.address}
+                </td>
                 <td className="bg-[#e4a9a9] text-gray-800">{location.city}</td>
-                <td className="bg-[#ecc6c6] text-gray-100">{location.review}</td>
+                <td className="bg-[#ecc6c6] text-gray-100">
+                  {location.review}
+                </td>
                 <td className="bg-[#e4a9a9] text-gray-800">{location.reach}</td>
               </tr>
             ))}
