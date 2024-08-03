@@ -126,12 +126,12 @@ const AcceptorPortal = () => {
           <div className="space-y-7 bg-gradient-to-r from-yellow-400 via-yellow-500 to-orange-600 p-8 rounded-full shadow-lg flex items-center">
             <h2 className="text-orange-500 md:text-3xl text-2xl font-bold md:leading-snug leading-snug ">
               The Acceptor's Portal{" "}
-              <span className="text-yellow">Donating With Love</span>
+              <span className="text-yellow">Accepting With Love</span>
             </h2>
           </div>
           <div className="bg-gradient-to-r from-red-400 via-yellow-500 to-orange-600 p-4 rounded-full shadow-lg flex items-center">
             <h2 className="text-gray-200 text-2xl font-bold md:leading-snug leading-snug text-center">
-              Hello Sarah!
+              Hello Ngo!
             </h2>
           </div>
         </div>
