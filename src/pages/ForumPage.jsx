@@ -1,11 +1,13 @@
-import React from "react";
+import React, { useEffect, useState } from "react";
 import ForumIcon from "/forum/forum_icon.png";
 import Love from "/forum/Love.png";
 import Navbar from "../components/Navbar";
 import Footer from "../components/Footer";
 
 function ForumPage() {
-  const posts = [
+
+  
+  const [posts, setPosts] = useState([
     {
       Image: "/forum/1.png",
       Title: "Healthy Gluten-Free Lunch Recipes",
@@ -61,7 +63,20 @@ function ForumPage() {
       No_of_comments: 98,
       likes: true,
     },
-  ];
+  ]);
+
+  
+  const toggle = (index) => {
+  
+    const newPosts = [...posts];
+    newPosts[index].likes = !newPosts[index].likes;
+    setPosts(newPosts); 
+  
+  };
+
+  useEffect(()=>{
+
+  }, [posts])
 
   return (
     <div className=" max-w-screen-2xl container mx-auto min-h-screen pt-32 py-10 bg-custom-gradient">
@@ -90,7 +105,7 @@ function ForumPage() {
           {posts.map((post, index) => (
             <div
               key={index}
-              className="post bg-[#FFA13B] opacity-90 rounded-xl w-full py-5 px-8 mb-5 flex justify-between items-center lg:flex-row flex-col"
+              className="glass bg-[#FFA13B] opacity-90 rounded-xl w-full py-5 px-8 mb-5 flex justify-between items-center lg:flex-row flex-col"
             >
               <div className="image rounded-2xl overflow-hidden lg:w-1/5 lg:h-/5 w-full ">
                 <img className="w-full h-full" src={post.Image} alt="" />
@@ -98,10 +113,12 @@ function ForumPage() {
               <div className="right w-full lg:w-4/5 h-full py-4 lg:px-10 px-0 ">
                 <div className="top flex justify-between items-center w-full">
                   <div className="text-md lg:text-3xl font-bold text-black">{post.Title}</div>
-                  <div className="h-10 w-10">
+                  <div className="h-10 w-10" >
                     <img
-                      className={post.likes ? "h-full" : "h-full grayscale"}
+                      className={post.likes ? "h-full cursor-pointer" : "h-full grayscale cursor-pointer"}
                       src={Love}
+                      onClick={()=>(toggle(index))}
+                      
                     />
                   </div>
                 </div>
