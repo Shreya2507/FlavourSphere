@@ -92,8 +92,12 @@ const DonationPortal = () => {
     <div className="max-w-screen-2xl container mx-auto xl:px-24 px-3 py-10 bg-custom-gradient min-h-screen">
       <div className="py-20 flex flex-row justify-between items-center gap-3">
         {/* images */}
-        <div className="h-[500px] w-[400px] w-1/2 md:w-1/2 xl:w-1/2 flex justify-center">
-          <img src="/images/DonationPortal/img.png" alt="Donation Portal" />
+        <div className="flex justify-center">
+          <img
+            src="/images/DonationPortal/img.png"
+            alt="Donation Portal"
+            className="w-1/2 h-auto md:w-1/2 xl:w-1/2 sm:w-1/2 lg:w-1/4 hidden sm:block"
+          />
         </div>
 
         {/* texts */}
@@ -141,10 +145,7 @@ const DonationPortal = () => {
                 </td>
                 <td className="bg-[#e4a9a9] text-gray-800">{location.reach}</td>
                 <td className="bg-[#e4a9a9] text-gray-800">
-                  <button
-                   
-                    className="btn btn-sm bg-button hover:bg-[#ba4545] hover:border-none rounded-full border-none px-6 text-white gap-2"
-                  >
+                  <button className="btn btn-sm bg-button hover:bg-[#ba4545] hover:border-none rounded-full border-none px-6 text-white gap-2">
                     Donate
                   </button>
                 </td>
