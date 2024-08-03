@@ -142,15 +142,8 @@ const DonationPortal = () => {
                 <td className="bg-[#e4a9a9] text-gray-800">{location.reach}</td>
                 <td className="bg-[#e4a9a9] text-gray-800">
                   <button
-                    style={{
-                      backgroundColor: "red",
-                      color: "white",
-                      padding: "10px 20px",
-                      border: "none",
-                      borderRadius: "50px",
-                      cursor: "pointer",
-                    }}
-                    className="btn btn-sm "
+                   
+                    className="btn btn-sm bg-button hover:bg-[#ba4545] hover:border-none rounded-full border-none px-6 text-white gap-2"
                   >
                     Donate
                   </button>
