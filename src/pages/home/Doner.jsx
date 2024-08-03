@@ -13,7 +13,7 @@ const Doner = () => {
             need, creating a bridge between recipe enthusiasts and food donors.
           </p>
           <div className="flex flex-row items-center justify-center ">
-            <Link to="/Aportal">
+            <Link to="/Acceptorportal">
               <button className="mx-10 btn hover:bg-[#ba4545] hover:border-none rounded-full border-none bg-[#D95B5B] text-white px-8 py-3 rounded-full border-none">
                 Acceptor
               </button>
