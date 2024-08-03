@@ -116,6 +116,7 @@ const DonationPortal = () => {
               <th className="bg-[#f9c300] text-gray-500">City</th>
               <th className="bg-[#f9c300] text-gray-500">Review</th>
               <th className="bg-[#f9c300] text-gray-500">Reach</th>
+              <th className="bg-[#f9c300] text-gray-500">Action</th>
             </tr>
           </thead>
           <tbody>
@@ -134,6 +135,9 @@ const DonationPortal = () => {
                   {location.review}
                 </td>
                 <td className="bg-[#e4a9a9] text-gray-800">{location.reach}</td>
+                <td className="bg-[#e4a9a9] text-gray-800">
+                  <button style={{ backgroundColor: 'red', color: 'white', padding: '10px 20px', border: 'none', borderRadius: '50px', cursor: 'pointer' }} className="btn btn-sm ">Donate</button>
+                </td>
               </tr>
             ))}
           </tbody>
