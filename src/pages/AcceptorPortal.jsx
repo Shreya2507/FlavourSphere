@@ -1,4 +1,4 @@
-import React from "react";
+import React, { useEffect } from "react";
 
 const donationLocations = [
   {
@@ -114,16 +114,13 @@ const donationLocations = [
 ];
 
 const AcceptorPortal = () => {
+  useEffect(() => {
+    window.scrollTo(0, 0);
+  }, []);
+
   return (
     <div className="max-w-screen-2xl container mx-auto xl:px-24 px-3 py-20 bg-custom-gradient min-h-screen">
-      <div className="toast toast-top toast-center">
-        <div className="alert alert-info">
-          <span>New User arrived.</span>
-        </div>
-        <div className="alert alert-success">
-          <span>Login Successfull ! Hello Sarah</span>
-        </div>
-      </div>
+     
       <div className="py-20 flex flex-col justify-between items-center gap-3">
         <div className="space-y-7 bg-red-500 opacity-80 p-6 rounded-lg">
           <h2 className="text-navbarBg md:text-3xl text-2xl  font-bold md:leading-snug leading-snug">
